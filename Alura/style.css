@@ -1,7 +1,17 @@
 body {
-    background: #CCCCCC;
+    
 }
-h1{
+#banner{
+    width: 100%; /*largura*/
+}
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+.titulo-pricipal{
+    padding-left: 20px; /*espaço internnno para a esquerda de 20px*/
+}
+.titulos{
     text-align: center
 }
 p {
@@ -12,4 +22,21 @@ p {
 }
 em strong {
     color: #ff0000;
+}
+.itens {
+    font-style: italic;
+}
+.beneficios{
+    background:#ffffff;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block; /*deixando elementos ocupar espaços ao lado*/
+    vertical-align: top; /*alinhamento no topo da divisao*/
+    width: 20%;
+    margin-right: 15%;
+}
+.imgbeneficios{
+    width: 50%;
 }
