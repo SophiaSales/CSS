@@ -22,6 +22,65 @@ nav a {
     font-weight: bold; /*fonte em negrito*/
     font-size: 22px; /*tamanho da fonte*/
     text-decoration: none; /*sem decoraçao no texto*/
+}
+nav a:hover{ /*quando o mause estiver por cima*/
+    color: #c78c19;
+    text-decoration: underline; /*add sublinhado com o mause por cima */
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; 
+}
+.produtos li{
+    display: inline-block; /*elementos da tabela um ao lado do outro tamanho regulados*/
+    text-align: center;
+    width: 30%; /*cada elemento tera 30% de largura*/
+    vertical-align: top; /*alinhando ao top da diviçao*/
+    
+    margin: 0 1.5%; /*espaçamento interno entre os elementos da tabela*/
+    padding: 30px 20px;
+    box-sizing: border-box; /*largura e espaçamento somados*/
+    /*borda*/
 
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.produtos li:hover{
+    border-color: #c78c19; 
+}
+.produtos li:active{ /*quando ele estiver precionado*/
+    border-color: #088c19;
+}
+.produtos li:hover h2{ /*quando o mause estiver em cima altere h2*/
+    font-size: 34px; /*aumentando a fonte com o mause em cima*/
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 18px;
+}   
+.preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background:url("./imags/bg.jpg");
+    padding: 40px 0;
+}
+.rodape {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0; /*margem superior*/
 
 }
+.rodape a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
