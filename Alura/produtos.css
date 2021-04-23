@@ -1,0 +1,27 @@
+header{
+    background: #bbbbbb;
+    padding: 20px 0; /*preenchiento em cima e em baixo 0 na direita e na esquerda */
+}
+.caixa{
+    position: relative;
+    width: 940px; /*margente entre a logo e a tabela*/
+    margin: 0 auto; /*margens se calculam deoendendo do tamanho da pagina */
+}
+nav{
+    position: absolute; /*colocando acima pra mudar o posiçao*/
+    top: 110px; /*tabela alinhada a imagem*/
+    right: 0; /*posicionada direita*/
+}
+nav li{
+    display: inline; /*alinhar*/
+    margin: 0 0 0 15px; /*margin na esquerda entre a tabela*/
+}
+nav a {
+    text-transform: uppercase; /*letras em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*fonte em negrito*/
+    font-size: 22px; /*tamanho da fonte*/
+    text-decoration: none; /*sem decoraçao no texto*/
+
+
+}
