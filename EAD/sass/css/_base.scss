@@ -1,26 +1,114 @@
-$text-color: white;  //variavel
+//*******************PARTIALS**********************
 
-@mixin bos-shadow($color) {
-    box-shadow: 3px 3px 4px 1px $color;
-}
+// $text-color: white;  //variavel
 
-body{
-    background-color: #7159c1;
-    color: $text-color;
-}
-.container {
-    @include bos-shadow(rgba(0,0,0,0.6));
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    $text-color: blue;
-    $text-color2: white;
+//*******ENCADEAMENTO, VARIAVEIS, ESCOPO***********
 
-    p{
-        @include bos-shadow(rgba(0,0,0,0.6));
-        background-color: red;
-        height: 100px;
-        width: 100px;
-        color:$text-color;
-    }
-}
+// body{
+//     background-color: #7159c1;
+//     color: $text-color;
+// }
+// .container{
+//     $text-color: blue;
+//     p{
+//         color: $text-color;
+//     }
+// }
+
+//********************MIXINS***********************
+
+// @mixin bos-shadow($color) {
+//     box-shadow: 3px 3px 4px 1px $color;
+// }
+//body{
+//     background-color: #7159c1;
+//     color: $text-color;
+// }
+// .container {
+//     @include bos-shadow(rgba(0,0,0,0.6));
+//     width: 200px;
+//     height: 200px;
+//     background-color: white;
+//     $text-color: blue;
+//
+//     p{
+//         @include bos-shadow(rgba(0,0,0,0.6));
+//         background-color: gray;
+//         height: 100px;
+//         width: 100px;
+//         color:$text-color;
+//     }
+// }
+
+//(*****************CONDICIONAL***********************
+
+// @mixin bos-shadow($color) {
+//     box-shadow: 3px 3px 4px 1px $color;
+// }
+// @mixin text-effect($val) {
+//     @if $val == danger {
+//         color: red;
+//     }@else if $val == alert{
+//         color: yellow;
+//     }@else{
+//         color: black;
+// }
+// body{
+//     background-color: #7159c1;
+//     color: $text-color;
+// }
+// .container {
+//     @include bos-shadow(rgba(0,0,0,0.6));
+//     width: 200px;
+//     height: 200px;
+//     background-color: white;
+//     $text-color: blue;
+//
+//     p{
+//         @include bos-shadow(rgba(0,0,0,0.6));
+//         background-color: gray;
+//         height: 100px;
+//         width: 100px;
+//         color:$text-color;
+//         @include text-effect(none);
+//     }
+// }
+
+//****************REPETIÇOES*****************************
+
+// @for $i from 1 through 5 { // pode ser usado o "to" no lugar do through
+//     .text-#{$i}{
+//         font-size:15px * $i
+//     }
+// }
+
+//*****************FUNÇOES*********************************
+
+// $colors:(color1: blue, color2:red, color3: yellow);
+// @each $key, $color in $colors{
+//     .#{$color}-text {color: lighten($color, 10); }
+// }
+
+// //**************HERANÇA**********************************
+
+// .flex{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// body{
+//     @extend.flex;
+//     flex-direction: column;
+//     height: 100%;
+// }
+
+//******************REFERENCING*******************************
+
+// p {
+//     color: red;
+//     cursor: pointer;
+//     &:hover{
+        
+//         color: blue;
+//     }
+// }
