@@ -13,7 +13,9 @@ a {
     text-decoration: none;
 }
 img {
+    display: block;
     max-width: 100%;
+    border-radius: 5px;
 } 
 
 /* Grid Geral */
@@ -58,16 +60,54 @@ img {
     margin-left: 30px;
 }
 
-
+/* Sidenav */
 .sidenav{
-    grid-area: sidenav;
+    grid-area: sidenav; /*definido em primeira coluna abaixo do header*/
+    background: #fafbfc;
+    padding: 30px;
 }
+.sidenav li a {
+    display: block;
+    min-height: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background:white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15); /*fundo nos icones*/
+    transition: .1s ease-out;
+}
+.sidenav li a:hover {
+    background: #b07dfb;
+}
+
+
+
+/* Content */
 .content{
     grid-area: content;
 }
+
+/* Anuncios */
 .anuncios {
-    grid-area: anuncios;
+    grid-area: anuncios; /*definido em terceira coluna ao lado de content*/
+    background:#fafbfc;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px;
 }
+
+/* Footer */
 .footer{
-    grid-area: footer;
+    grid-area: footer; /*definido em ultima linha em baixo de anuncios*/
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.footer p a{
+    color: white;
 }
