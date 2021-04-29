@@ -122,7 +122,7 @@ img {
     background: #b07dfb;
 }
 
-@keyframes seta {
+@keyframes seta { /*animaçao de seta*/
     from {
         right: 30px;
     }
